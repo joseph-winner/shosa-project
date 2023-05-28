@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bodyfonts: 'Poppins', sans-serif;
+    --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    --buttonscolor:#0085ff;
+    --outlinecolor:#69b4ff;
+    --primary-300:#e0ffff;
+    --backcolor:#006fff;
+    --fontback:#e1ffff;
+    --bodybackcolor:#FFFFFF;
+    --text-200:#9e9e9e;
+    --fontcolor:#1E1E1E;
+    --bg-200:#2d2d2d;
+    --bg-300:#454545;   
+}
+
+
+/* HERO COMPONENT */
+.hero-image-wrapper img{
+    width: 700px;
+    border-radius: 5px;
+    height: 380px;
+}
+.hero-image-wrapper{
+    margin: 30px 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+
+.hero-image-wrapper .hero-content-wrapper{
+    line-height: 2.1;
+    font-family: var(--bodyfonts);
+}
+
+.hero-content-wrapper button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    margin-top: 30px;
+   }
+   
+   .hero-content-wrapper button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   .hero-content-wrapper button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: var(--buttonscolor);
+    border-radius: 1.625rem;
+   }
+   
+   .hero-content-wrapper button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   .hero-content-wrapper button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   .hero-content-wrapper button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   .hero-content-wrapper button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: var(--buttonscolor);
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+    /* text-transform: uppercase; */
+   }
+   
+   .hero-content-wrapper button:hover .circle {
+    width: 100%;
+   }
+   
+   .hero-content-wrapper button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   .hero-content-wrapper button:hover .button-text {
+    color: #fff;
+   }
+
+   @media(max-width:1010px){
+    .hero-image-wrapper .hero-content-wrapper{
+        line-height: 1.8;
+        font: 14px;
+    }
+
+    .hero-image-wrapper img{
+        width: 500px;
+        border-radius: 5px;
+        height: 320px;
+    }
+}
+   @media(max-width:850px){
+    .hero-image-wrapper{
+        flex-wrap: wrap;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .hero-image-wrapper img{
+        width: 100%;
+        height: 80%;
+    }
+    .hero-content-wrapper button {
+        margin-top: 15px;
+       }
+    
+   }
+
+/* HERO COMPONENT */
+
+/* MISSION VISION OBJECTIVES */
+.main-mission-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 35px 0px;
+    padding: 10px 20px;
+    background-color: var(--bg-200);
+    color: var(--bodybackcolor);
+}
+.main-mission-container >*{
+    flex: 1 1 100%;
+}
+.mission-component img{
+    width: 100px;
+    /* mix-blend-mode: color-burn; */
+    margin: 10px 0px;
+}
+.mission-component .mission-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-component .mission-row ul{
+    list-style: none;
+}
+.mission-component{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow);
+    padding: 10px;
+    border-radius: 4px;
+    font-family: var(--bodyfonts);
+}
+
+@media(max-width:1080px){
+    .mission-component .mission-row{
+        font-size: 12px;
+    }
+    .mission-component img{
+        width: 80px;
+        margin: 5px 0px;
+    }
+}
+@media(max-width:880px){
+    .main-mission-container{
+        flex-wrap: wrap;
+    }
+    .mission-component .mission-row{
+        font-size: 18px;
+    }
+    .mission-component img{
+        width: 100px;
+        margin: 10px 0px;
+    }
+}
+@media(max-width:500px){
+    .mission-component .mission-row{
+        font-size: 16px;
+    }
+    .mission-component img{
+        width: 80px;
+        margin: 10px 0px;
+    }
+}
+/* MISSION VISION OBJECTIVES */

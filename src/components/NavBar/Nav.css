@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bodyfonts: 'Poppins', sans-serif;
+    --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    --buttonscolor:#0085ff;
+    --outlinecolor:#69b4ff;
+    --primary-300:#e0ffff;
+    --backcolor:#006fff;
+    --fontback:#e1ffff;
+    --bodybackcolor:#FFFFFF;
+    --text-200:#9e9e9e;
+    --fontcolor:#1E1E1E;
+    --bg-200:#2d2d2d;
+    --bg-300:#454545;   
+}
+
+.nav-container{
+    background-color: var(--backcolor);
+}
+
+header{
+    margin-top: 80px;
+}
+header h1{
+    font-size: 22px;
+    text-align: center;
+    margin: 0px 10px;
+    padding-top: 25px;
+    font-family: var(--bodyfonts);
+    color: var(--bodybackcolor);
+}
+@media(max-width:560px){
+    header h1{
+        font-size: 18px;
+    }
+}
+
+
+
+
+/*  NAVIGATION BAR STYLING */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+    /* margin-top: 35px; */
+    height: 80px;
+    background-color: var(--backcolor);
+    font-family: var(--bodyfonts);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: var(--bodybackcolor);
+}
+
+nav .nav-items ul{
+    list-style: none;
+}
+
+nav .nav-items ul li{
+    display: inline-block;
+    padding: 0px 15px;
+    font-size: 22px;
+}
+
+nav .nav-items-2{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav .nav-items-2 .home-cart .cart-items{
+    margin-left: 4px;
+}
+@media(max-width:1050px){
+    nav .nav-items ul li{
+        font-size: 18px;
+    }
+}
+@media(max-width:930px){
+    nav .nav-items ul li{
+        font-size: 16px;
+    }
+}
+@media(max-width:870px){
+    nav .nav-items ul li{
+        font-size: 14px;
+    }
+}
+@media(max-width:815px){
+    nav .nav-items{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav .nav-items-2{
+        margin-right: 20px;
+    }
+    nav .humberger{
+        margin-left: 20px;
+        font-size: 28px;
+    }
+}
+/*  NAVIGATION BAR STYLING */
