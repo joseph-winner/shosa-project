@@ -47,21 +47,72 @@ const Mission = () =>{
 const Quicklinks = () =>{
   return(
     <>
-    <h1>Quick Links</h1>
+      <div className='quick-links-section'>
+        <div className='user-account quick-link'>
+          <i className='fa fa-user'></i> <p>Register User Account</p>
+        </div>
+
+        <div className='user-account quick-link'>
+          <i className='fa fa-plus-circle'></i> <p>Sell Something</p>
+        </div>
+
+
+        <div className='user-account quick-link'>
+          <i className='fa fa-bullhorn'></i> <p>Join Our Community</p>
+        </div>
+
+        <div className='user-account quick-link'>
+          <i className='fa fa-sign-in'></i> <p>Login to Account</p>
+        </div>
+
+
+      </div>
     </>
   )
 }
 const Events = () =>{
   return(
     <>
-    <h1>Links</h1>
+      <div className='events-sect'>
+      <div className='events-section'>
+        <div className='event-date'>
+          <span className='event-month'>July</span>
+          <span className='event-dater'>08</span>
+        </div>
+        <div className='event-desc'>
+          <p>Annual School Visit</p>
+          <p>Standard High School Igorora</p>
+        </div>
+      </div>
+      
+      <div className='events-section'>
+        <div className='event-date'>
+          <span className='event-month'>Nov</span>
+          <span className='event-dater'>10</span>
+        </div>
+        <div className='event-desc'>
+          <p>Annual General Meeting</p>
+          <p>Online SHOSA Platform</p>
+        </div>
+      </div>
+      </div>
     </>
   )
 }
 const Aboutus = () =>{
   return(
     <>
-    <h1>About</h1>
+      <div className='about-us-items'>
+        <h3>A Few Words About SHOSA</h3>
+        <p>
+          Welcome to our SHOSA website! Our mission is to foster a vibrant community 
+          of SHOSA who continue to make an impact long after their time at Standard High School. 
+          We are dedicated to providing resources and opportunities for SHOSA members to stay connected, 
+          share their experiences, and support each other in their personal and professional lives. 
+          Join us in our mission to make a difference in the world!
+          <span className='about-join-btn'>Join Now</span>
+        </p>
+      </div>
     </>
   )
 }
@@ -72,10 +123,12 @@ const Aboutus = () =>{
 const About = () => {
   return (
     <>
-    <Mission />
-    <Aboutus />
-    <Events />
-    <Quicklinks />
+      <Mission />
+      <div className='about-flex-items'>
+        <Aboutus />
+        <Events />
+        <Quicklinks />
+      </div>
     </>
   )
 }
