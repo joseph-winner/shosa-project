@@ -330,20 +330,12 @@
     width: 200px;
     box-shadow: var(--shadow);
     border-radius: 4px;
-    overflow: hidden;
-    transition: 0.5s ease-in-out;
 }
 
 .team-members img{
     width: 200px;
     height: 180px;
     border-radius: 4px;
-    overflow: hidden;
-}
-
-.team-members img:hover{
-    transform: scale(1.2);
-    overflow: hidden;
 }
 
 .team-member p{
@@ -356,7 +348,7 @@
 
 @media(max-width:900px){
     .team-members >*{
-        width: 180px;
+        width: 90%px;
     }
 
     .team-members img{
@@ -370,12 +362,13 @@
             margin: 30px 5px;
     }
     .team-members >*{
-        width: 160px;
+        width: 40%;
     }
 
     .team-members img{
-        width: 160px;
-        height: 130px;
+        width: 100%px;
+        height: 150px;
+        /* height: auto; */
     }
 
 }
