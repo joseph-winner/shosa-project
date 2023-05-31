@@ -367,15 +367,17 @@
 @media(max-width:700px){
     .team-members{
         flex-wrap: wrap;
+            margin: 30px 5px;
     }
     .team-members >*{
-        width: 180px;
+        width: 160px;
     }
 
     .team-members img{
-        width: 180px;
-        height: 150px;
+        width: 160px;
+        height: 130px;
     }
+
 }
 /* TEAM COMPONENT */
 
@@ -431,14 +433,11 @@
     margin-top: 15px;
     font-weight: 600;
 }
-@media(max-width:1010px){
-    .advert-sect{
-        flex-wrap: wrap;
-    }
-}
+
 @media(max-width:1500px){
     .advert-sect{
         flex-wrap: wrap;
+        margin: 30px 5px;
     }
 }
 /* ADVERTISEMENT COMPONENT */
